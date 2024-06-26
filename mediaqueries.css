@@ -120,10 +120,13 @@
   /* Adjustments for smaller screens */
   .about-details-container {
     padding: 1rem; /* Add padding for spacing */
+    flex-wrap: wrap;
+    
   }
   
   .about-containers {
     margin-bottom: 2rem; /* Increase bottom margin */
+    flex-wrap: wrap;
   }
 
   .experience-details-container {
