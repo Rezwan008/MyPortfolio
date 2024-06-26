@@ -1,127 +1,140 @@
 @media screen and (max-width: 1400px) {
+  /* Adjustments for medium screens */
   #profile {
-    height: 83vh;
-    margin-bottom: 6rem;
-
+    height: auto; /* Adjust height as needed */
+    margin-bottom: 4rem; /* Increase margin to avoid overlap */
   }
+
   .about-containers {
     flex-wrap: wrap;
   }
+
   #contact,
   #projects {
-    height:fit-content;
+    height: auto; /* Ensure sections adjust height as per content */
     display: block;
-
-
-    
   }
-  
 }
 
 @media screen and (max-width: 1200px) {
+  /* Adjustments for smaller screens */
   #desktop-nav {
     display: none;
   }
+
   #hamburger-nav {
     display: flex;
   }
+
   #experience,
   .experience-details-container {
-    margin-top: 2rem;
-    
+    margin-top: 2rem; /* Increase margin top */
   }
+
   #profile,
   .section-container {
     display: block;
   }
+
   .arrow {
     display: none;
   }
+
   section,
   .section-container {
-    height: fit-content;
-    
+    height: auto; /* Adjust section height */
+    margin: 0 5%; /* Adjust margins */
   }
-  section {
-    margin: 0 5%;
-    
-  }
+
   .section__pic-container {
-    width: 275px;
-    height: 275px;
-    margin: 0 auto 2rem;
-    border-radius: 20px; /* Adjust the radius value to round the corners */
-    overflow: hidden; /* Clip content to fit within the rounded corners */
+    width: 100%; /* Adjust width */
+    height: auto; /* Ensure image height adjusts */
+    margin: 0 auto 2rem; /* Adjust margins */
+    border-radius: 20px;
+    overflow: hidden;
   }
+
   .about-containers {
     margin-top: 0;
   }
 }
 
 @media screen and (max-width: 600px) {
+  /* Adjustments for mobile screens */
   #contact,
   footer {
-    height: 40vh;
+    height: auto; /* Adjust height */
   }
 
   #profile {
-    height: 83vh;
-    margin-bottom: 0;
+    height: auto; /* Adjust height */
+    margin-bottom: 0; /* Remove bottom margin if not needed */
   }
 
   article {
-    font-size: 1rem;
+    font-size: 1rem; /* Adjust font size for articles */
   }
+
   footer nav {
-    height: fit-content;
+    height: fit-content; /* Ensure nav height adjusts */
     margin-bottom: 2rem;
   }
+
   .about-containers,
   .contact-info-upper-container,
   .btn-container {
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Allow flex items to wrap */
   }
+
   .contact-info-container {
-    margin: 0;
+    margin: 0; /* Remove margin if not needed */
   }
+
   .contact-info-container p,
   .nav-links li a {
-    font-size: 1rem;
+    font-size: 1rem; /* Adjust font size */
   }
+
   .experience-sub-title {
-    font-size: 1.25rem;
+    font-size: 1.25rem; /* Adjust subtitle font size */
   }
+
   .logo {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Adjust logo font size */
   }
+
   .nav-links {
     flex-direction: column;
     gap: 0.5rem;
     text-align: center;
   }
-  .section__pic-container {
-    width: auto;
-    height: 46vw;
-    justify-content: center;
-    border-radius: 20px; /* Adjust the radius value to round the corners */
-    overflow: hidden; /* Clip content to fit within the rounded corners */
-  }
-  .section__text__p2 {
-    font-size: 1.25rem;
-  }
-  .title {
-    font-size: 2rem;
-  }
-  .text-container {
-    text-align: center;
-    
-  }
-  .corners {
-    border-radius: 40px;
-    overflow: hidden; /* Clip content to fit within the rounded corners */
 
+  .section__pic-container {
+    width: auto; /* Adjust width */
+    height: 46vw; /* Adjust height */
+    justify-content: center;
+    border-radius: 20px;
+    overflow: hidden;
   }
+
+  .section__text__p2 {
+    font-size: 1.25rem; /* Adjust text size */
+  }
+
+  .title {
+    font-size: 2rem; /* Adjust title font size */
+  }
+
+  .text-container {
+    text-align: center; /* Center align text container */
+  }
+
+  .corners {
+    border-radius: 40px; /* Adjust border radius */
+    overflow: hidden;
+  }
+
   .second-sentence {
-    margin-top: 40px; /* Adjust the margin-top value to increase space */
+    margin-top: 40px; /* Adjust margin as needed */
+  }
 }
-} 
