@@ -1,161 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <nav class="desktop-nav">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
       <div class="logo">My Portfolio</div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
-    <nav class="mobile-nav">
+    <nav id="hamburger-nav">
       <div class="logo">Rezwan Ahmed</div>
-      <div class="hamburger-menu" onclick="toggleMenu()">
-        <div class="hamburger-icon">
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
           <span></span>
           <span></span>
         </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
       </div>
-      <ul class="menu-links">
-        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-      </ul>
     </nav>
-  </header>
-
-  <main>
     <section id="profile">
-      <div class="profile-pic-container">
-        <img src="./assets/cover.jpg" alt="Cover Picture">
+      <div class="section__pic-container">
+        <img src="./assets/cover.jpg"  />
       </div>
-      <div class="profile-text">
-        <p>Hello, I am</p>
-        <h1>Rezwan Ahmed</h1>
-        <p>Aspiring Software Developer</p>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I am</p>
+        <h1 class="title">Rezwan Ahmed</h1>
+        <p class="section__text__p2">Aspiring Software Developer</p>
         <div class="btn-container">
-          <button onclick="window.open('assets/RezwanCorporateResume2024.pdf')">My Resume</button>
-          <button onclick="location.href='#contact'">Contact Info</button>
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('assets/RezwanCorporateResume2024.pdf')"
+          >
+            My Resume
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
         </div>
-        <div class="socials-container">
-          <a href="https://www.linkedin.com/in/rezwanahmed78/" target="_blank"><img src="./assets/linkedin.png" alt="LinkedIn"></a>
-          <a href="https://github.com/Rezwan008" target="_blank"><img src="./assets/github.png" alt="GitHub"></a>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/rezwanahmed78/'"target="_blank"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Rezwan008'" target="_blank"
+          />
         </div>
       </div>
     </section>
-
     <section id="about">
-      <h1>About Me</h1>
-      <div class="about-container">
-        <div class="about-pic-container">
-          <img src="./assets/cover2.jpg" alt="Profile Picture">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container corners">
+          <img
+            src="./assets/cover2.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
         </div>
-        <div class="about-details">
-          <div class="skills-container">
-            <img src="./assets/experience.png" alt="Experience">
-            <h3>Skills and Expertise</h3>
-            <p>Blender Software, Microsoft Applications, DaVinci Resolve, Adobe Photoshop & Premiere Pro, Quick learning, Problem Solving, Management</p>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Skills and Expertise</h3>
+              <p>Blender Software<br />Microsoft Applications<br />DaVinci Resolve Software<br />Adobe Photoshop & Premiere Pro<br />Quick learning and Self learning<br />Problem Solving and Adaptability<br />Management and Planning</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Bachelors Degree in Computer Science<br /><br />University of Calgary (09/2021 - 09/2025)<br/> <br />Pearson Edexcel AS & A2 (06/2019 - 06/2020)<br /> <br />Pearson Edexcel OLevel (01/2018 - 06/2018)</p>
+            </div>
           </div>
-          <div class="education-container">
-            <img src="./assets/education.png" alt="Education">
-            <h3>Education</h3>
-            <p>Bachelors Degree in Computer Science, University of Calgary, Pearson Edexcel AS & A2, Pearson Edexcel OLevel</p>
-          </div>
-          <div class="about-text">
-            <p><strong>'Acquire competency and success will follow.'</strong></p>
-            <p>Throughout my life, I have always wanted to help people around me. I realized the best way to achieve this goal is through computer science...</p>
+          <div class="text-container">
+            
+              <p><center><strong>'Acquire competency and success will follow.'</strong></center></p>
+              <p class="second-sentence">
+            Throughout my life I have always wanted to help the people around me and I realized the best way I can achieve
+            this goal of mine would be through computer science. I am very enthusiastic when it comes to brainstorming for ideas and solutions to real world
+            problems through the lens of technology and software. My ambition and desire to create unique and useful software, which can be utilized
+            efficiently in the real world for a better future for the people around me, is what keeps me motivated on my journey.
+            </p>
           </div>
         </div>
       </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
     </section>
-
     <section id="experience">
-      <h1>Experiences</h1>
-      <div class="experience-container">
-        <div class="experience-category">
-          <h2>Programming Languages</h2>
-          <div class="experience-item"><img src="./assets/checkmark.png" alt="Python"> Python - Experienced</div>
-          <div class="experience-item"><img src="./assets/checkmark.png" alt="Java"> Java - Experienced</div>
-          <div class="experience-item"><img src="./assets/checkmark.png" alt="C Language"> C Language - Intermediate</div>
-          <div class="experience-item"><img src="./assets/checkmark.png" alt="SQL"> SQL - Intermediate</div>
-        </div>
-        <div class="experience-category">
-          <h2>Web Technologies</h2>
-          <div class="experience-item"><img src="./assets/checkmark.png" alt="HTML"> HTML - Experienced</div>
-          <div class="experience-item"><img src="./assets/checkmark.png" alt="CSS"> CSS - Experienced</div>
-          <div class="experience-item"><img src="./assets/checkmark.png" alt="JavaScript"> JavaScript - Intermediate</div>
-          <div class="experience-item"><img src="./assets/checkmark.png" alt="XML"> XML - Intermediate</div>
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experiences</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Languages</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C Language</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Languages</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>XML</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
         </div>
       </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
     </section>
-
     <section id="projects">
-      <h1>Projects</h1>
-      <div class="projects-container">
-        <div class="project">
-          <img src="./assets/selfcheckout.jpg" alt="Self Checkout Station">
-          <h2>Self Checkout Station</h2>
-          <div class="project-links">
-            <a href="https://github.com/neferxpitou/SENG300-P3-6" target="_blank">Github</a>
-            <a href="https://www.youtube.com/watch?v=vTqvb8gDe14&ab_channel=RezwanAhmed" target="_blank">Demo Video</a>
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/selfcheckout.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Self Checkout Station</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/neferxpitou/SENG300-P3-6'"target="_blank"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.youtube.com/watch?v=vTqvb8gDe14&ab_channel=RezwanAhmed'" target="_blank"
+              >
+                Demo Video
+              </button>
+            </div>
           </div>
-        </div>
-        <div class="project">
-          <img src="./assets/calorietracker.jpg" alt="Calorie Tracker Program">
-          <h2>Calorie Tracker Program</h2>
-          <a href="https://github.com/Raizan17/Calorie-Tracker-Application/tree/main/GUI_OOCT" target="_blank">Github</a>
-        </div>
-        <div class="project">
-          <img src="./assets/movie.jpg" alt="Movie Review Website">
-          <h2>Movie Review Website</h2>
-          <div class="project-links">
-            <a href="https://github.com/Rezwan008/MovieReview" target="_blank">Github</a>
-            <a href="https://browsemovies-site.netlify.app/" target="_blank">Live Demo</a>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/calorietracker.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Calorie Tracker Program</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Raizan17/Calorie-Tracker-Application/tree/main/GUI_OOCT'"
+              >
+                Github
+              </button>
+
+            </div>
           </div>
-        </div>
-        <div class="project">
-          <img src="./assets/groc.png" alt="Grocery Analyzer Web App">
-          <h2>Grocery Analyzer Web App</h2>
-          <a href="https://www.linkedin.com/posts/rezwanahmed78_thegroceryanalyzer-uofcproject-databasemanagement-activity-7159753534849085440-4u2Q" target="_blank">Learn More</a>
-        </div>
-        <div class="project">
-          <img src="./assets/logo-color.png" alt="Fitness Tracker Mobile App">
-          <h2>Fitness Tracker Mobile App</h2>
-          <a href="https://www.youtube.com/watch?v=QQroI8vquPk&ab_channel=RezwanAhmed" target="_blank">Demo Video</a>
+          
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/movie.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Movie Review Website</h2>
+            <div class="btn-container">
+              
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/Rezwan008/MovieReview'"
+            >
+             Github
+            </button>
+            <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://browsemovies-site.netlify.app/'"
+          >
+            Live Demo
+          </button>
+
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/groc.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Grocery Analyzer Web App</h2>
+            
+            <p></p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.linkedin.com/posts/rezwanahmed78_thegroceryanalyzer-uofcproject-databasemanagement-activity-7159753534849085440-4u2Q?utm_source=share&utm_medium=member_desktop'"
+              >
+                Learn More
+              </button>
+
+            </div>
+          </div>
+           <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/logo-color.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Fitness Tracker Mobile App</h2>
+            
+            <p></p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.youtube.com/watch?v=QQroI8vquPk&ab_channel=RezwanAhmed'"
+              >
+                Demo Video
+              </button>
+
+            </div>
+          </div>
+          
         </div>
       </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
     </section>
-
     <section id="contact">
-      <h1>Contact Me</h1>
-      <div class="contact-info">
-        <div class="contact-item">
-          <img src="./assets/email.png" alt="Email">
-          <a href="mailto:rezwan.channel@gmail.com">rezwan.channel@gmail.com</a>
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:rezwan.channel@gmail.com">rezwan.channel@gmail.com</a></p>
         </div>
-        <div class="contact-item">
-          <img src="./assets/linkedin.png" alt="LinkedIn">
-          <a href="https://www.linkedin.com/in/rezwanahmed78/" target="_blank">LinkedIn</a>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/rezwanahmed78/">LinkedIn</a></p>
         </div>
       </div>
     </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2023 Rezwan Ahmed. All Rights Reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Rezwan Ahhmed All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
