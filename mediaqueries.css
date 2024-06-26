@@ -23,6 +23,7 @@
   #experience,
   .experience-details-container {
     margin-top: 2rem;
+    flex-wrap: wrap;
   }
   #profile,
   .section-container {
@@ -47,6 +48,7 @@
   }
   .about-containers {
     margin-top: 0;
+    flex-wrap: wrap;
   }
 }
 
