@@ -1,4 +1,5 @@
 @media screen and (max-width: 1400px) {
+  /* Adjustments for max-width 1400px */
   #profile {
     height: 83vh;
     margin-bottom: 6rem;
@@ -14,6 +15,7 @@
 }
 
 @media screen and (max-width: 1200px) {
+  /* Adjustments for max-width 1200px */
   #desktop-nav {
     display: none;
   }
@@ -51,16 +53,15 @@
 }
 
 @media screen and (max-width: 600px) {
+  /* Adjustments for max-width 600px */
   #contact,
   footer {
     height: 40vh;
   }
-
   #profile {
     height: 83vh;
     margin-bottom: 0;
   }
-
   article {
     font-size: 1rem;
   }
@@ -113,24 +114,5 @@
   }
   .second-sentence {
     margin-top: 40px; /* Adjust the margin-top value to increase space */
-  }
-
-  /* Adjustments for smaller screens */
-  .about-details-container {
-    padding: 1rem; /* Add padding for spacing */
-  }
-  
-  .about-containers {
-    margin-bottom: 2rem; /* Increase bottom margin */
-  }
-
-  .experience-details-container {
-    padding: 1rem; /* Add padding for spacing */
-    margin-top: 2rem; /* Increase top margin */
-  }
-
-  .article-container {
-    gap: 1rem; /* Adjust gap between articles */
-    flex-direction: column; /* Stack articles vertically */
   }
 }
