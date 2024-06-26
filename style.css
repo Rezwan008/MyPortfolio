@@ -264,7 +264,7 @@ section {
 /* ABOUT SECTION */
 
 #about {
-  position: relative;
+  position: fixed;
 }
 
 .about-containers {
@@ -317,7 +317,7 @@ section {
 /* EXPERIENCE SECTION */
 
 #experience {
-  position: relative;
+  position: fixed;
 }
 
 .experience-sub-title {
