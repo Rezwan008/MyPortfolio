@@ -125,12 +125,12 @@
   }
 
   .experience-details-container {
-    padding: 1rem; /* Add padding for spacing */
+    padding: 2rem; /* Add padding for spacing */
     margin-top: 2rem; /* Increase top margin */
   }
 
   .article-container {
-    gap: 1rem; /* Adjust gap between articles */
+    gap: 2rem; /* Adjust gap between articles */
     flex-direction: column; /* Stack articles vertically */
   }
 }
