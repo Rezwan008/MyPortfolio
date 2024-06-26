@@ -158,9 +158,6 @@ section {
 
 .section-container {
   display: flex;
-  gap: 4rem;
-  height: 80%; /* Ensure containers do not overlap */
-  flex-wrap: wrap; /* Added to prevent overlap */
 }
 
 /* PROFILE SECTION */
@@ -306,6 +303,17 @@ section {
   text-align: center;
 }
 
+.section-container {
+  gap: 4rem;
+  height: 80%;
+}
+
+.section__pic-container {
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
 /* EXPERIENCE SECTION */
 
 #experience {
@@ -323,13 +331,16 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  
 }
 
 .article-container {
-  display: grid; /* Changed to grid for better layout control */
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Ensures responsive columns */
-  gap: 2.5rem;
+  display: flex;
   text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
 }
 
 article {
@@ -347,42 +358,33 @@ article .icon {
 
 #projects {
   position: relative;
-  max-width: 100%;
-  margin: 0 auto;
-  box-sizing: border-box;
-  padding: 0 20px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
+  max-width: 100%; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center the sections horizontally */
+  box-sizing: border-box; /* Include padding and borders in the width */
+  padding: 0 20px; /* Add padding for better spacing */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for emphasis */
+  margin-bottom: 20px; /* Optional: add some space between project sections */
 }
 
 .color-container {
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  height: 400px; /* Adjusted height for consistent sizing */
-  padding: 1rem;
-  box-sizing: border-box;
 }
 
 .project-img {
   border-radius: 2rem;
-  width: 100%;
-  height: auto;
+  width: 90%;
+  height: 90%;
 }
 
 .project-title {
-  margin: 1rem 0;
+  margin: 1rem;
   color: black;
 }
 
-.project-btn-container {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  margin-top: auto;
+.project-btn {
+  color: black;
+  border-color: rgb(163, 163, 163);
 }
 
 /* CONTACT */
@@ -435,19 +437,3 @@ footer {
 footer p {
   text-align: center;
 }
-
-/* RESPONSIVE ADJUSTMENTS */
-
-@media (max-width: 768px) {
-  .section-container {
-    flex-direction: column; /* Stack items vertically on smaller screens */
-    align-items: center;
-  }
-
-  .color-container {
-    width: 100%;
-    max-width: 500px; /* Adjust max width as needed */
-  }
-
-  .article-container {
-    grid-template-columns: repeat(auto-fill
